@@ -14,31 +14,31 @@ document.addEventListener("DOMContentLoaded", function() {
         const email = document.getElementById("email").value.trim();
         const password = document.getElementById("password").value.trim();
 
-        let isvalid = true;
+        let isValid = true;
 
         let messages = [];
 
         if (username.length < 3){
-             isvalid = false;
+             isValid = false;
              messages.push("The Username is invalid");
         } 
 
         if (!email.includes("@")  || (".")) {
-            isvalid = false;
+            isValid = false;
 
             messages.push("Please enter a valid email address.");
         }
         
 
         if( password.length < 8){
-            isvalid = false;
+            isValid = false;
             messages.push("Password is too short");
         }
 
 
         feedbackDiv.style.display = "block";
 
-        if(isvalid = true){
+        if(isValid = true){
             feedbackDiv.style.textContent = "Registration Successful!";
             feedbackDiv.style.color = "#28a745";
 
