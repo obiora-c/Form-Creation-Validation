@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let isvalid = true;
 
-        messages = [];
+        let messages = [];
 
         if (username.length < 3){
-             let isvalid = false;
+             isvalid = false;
              messages.push("The Username is invalid");
         } 
 
